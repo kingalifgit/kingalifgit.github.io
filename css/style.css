@@ -1,0 +1,36 @@
+.fix-nav {
+  backdrop-filter: blur(5px);
+}
+
+.bg-opacity-80 {
+  backdrop-filter: blur(5px);
+}
+
+.ham-active {
+  margin-right: .3rem;
+}
+
+.navBtn{
+  display: flex;
+  flex-direction: column;
+  gap: 4.5px
+}
+
+.navBtn span{
+  width: 20px;
+  height: 3px ;
+  border-radius: 12rem;
+  background: white;
+}
+
+.navActive span:first-child{
+  transform: rotate(45deg);
+}
+
+.navActive span:nth-child(2){
+  transform: scale(0);
+}
+
+.navActive span:last-child{
+  transform: rotate(-45deg);
+}

@@ -1,0 +1,129 @@
+<html class="scroll-smooth scroll-pt-[3.7rem]">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-slate-50 font-mono flex flex-col gap-2">
+  <nav class="bg-gray-900 fixed flex w-full justify-between px-4 z-50 lg:px-[14rem] h-[60px] items-center text-slate-50 transition duration-150">
+    <a href="index.html" class="text-xl font-black">Alif rahman</a>
+
+    <div class="lg:hidden navBtn">
+      <span class="transition duration-150 ease-in-out origin-bottom-left"></span>
+      <span class="transition duration-150 ease-in-out"></span>
+      <span class="transition duration-150 ease-in-out origin-top-left"></span>
+    </div>
+
+    <div id="navMenu" class="lg:flex gap-5 hidden transition ease-in-out duration-200">
+      <a href="#about" class="block lg:inline">Tentang saya</a>
+      <a href="#Portofolio" class="block lg:inline">Portofolio</a>
+      <a href="#kontak" class="block lg:inline">Kontak saya</a>
+      <a href="#galery" class="block lg:inline">Galery</a>
+    </div>
+  </nav>
+  <main class="flex flex-col gap-2 lg:justify-center lg:m-auto">
+    <section id="about" class="p-4 h-screen pt-[6rem] lg:px-[14rem]">
+      <h2 class="text-lg font-bold text-center pt-[4rem]">Tentang saya</h2>
+        <div class="flex flex-col items-center my-auto text-center lg:flex-col mt-4">
+          <div class="lg:flex lg:flex-1 lg:justify-between lg:gap-[16rem] items-center">
+            <img src="img/uta.jpg" class="rounded-full w-[50%] m-auto lg:w-[30%] mb-3 border-[.3rem] border-slate-900" alt="">
+            <div class="lg:flex lg:flex-col">
+              <h2 class="lg:w-full">Hi semuanya <i class="fa-solid fa-hand rotate-45"></i>. Namaku</h2>
+              <div class="text-lg font-bold">Alif rahman</div>
+              <p class="p-2 lg:p-0">Ini adalah halaman portofolio sederhana yang aku buat menggunakan framework css tailwind dan juga
+                sedikit javascript dasar.</p>
+            </div>
+          </div>
+          <div class="lg:flex-1 lg:items-center lg:justify-center lg:text-center">
+            <h2 class="font-bold mt-3">Ayo kenalan.</h2>
+            <p class="p-2">Temukan dan kejutkan aku di sini.</p>
+            <div class="flex gap-3 text-xl text-slate-400 justify-center mt-5">
+              <button><i class="fa-lg fa-brands fa-square-facebook"></i></button>
+              <button><i class="fa-lg fa-brands fa-instagram"></i></button>
+              <button><i class="fa-lg fa-brands fa-whatsapp"></i></button>
+              <button><i class="fa-lg fa-brands fa-tiktok"></i></button>
+              <button><i class="fa-lg fa-brands fa-youtube"></i></button>
+              <button><i class="fa-lg fa-brands fa-twitter"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Portofolio" class="bg-slate-200 lg:p-5 min-h-screen pt-[2rem] p-4 lg:px-[14rem]">
+      <h2 class="text-lg font-bold text-center">Portofolio</h2>
+      <p class="p-2 lg:mt-[7rem]">Ini adalah beberapa portfolio project pribadi hasil belajar otodidak dari internet terkhusus
+        youtube, terkhusus lagi dari channel youtube WPU. terimakasih bapak Sandika galih atas ilmunya.</p>
+      <h3 class="font-bold">Projek sederhana</h3>
+      <ol class="list-decimal rounded-lg mx-12 font-semibold">
+        <li>
+          <a href="" target="_blank" class="text-sky-700">Color flipper</a>
+        </li>
+        <li>
+          <a href="" target="_blank" class="text-sky-700">Counter</a>
+        </li>
+        <li>
+          <a href="" target="_blank" class="text-sky-700">Review page</a>
+        </li>
+        <li>
+          <a href="" target="_blank" class="text-sky-700">Responsive navbar</a>
+        </li>
+        <li>
+          <a href="" target="_blank" class="text-sky-700">Sidebar</a>
+        </li>
+        <li>
+          <a href="" target="_blank" class="text-sky-700">Modal</a>
+        </li>
+        <li>
+          <a href="" target="_blank" class="text-sky-700">Question</a>
+        </li>
+        <li>
+          <a href="" target="_blank" class="text-sky-700">Coming soon.</a>
+        </li>
+      </ol>
+
+      <h3 class="my-3 font-bold">Keahlianku</h3>
+      <div class="flex gap-3 justify-center text-slate-400 text-4xl lg:justify-start">
+        <i class="fa-brands fa-html5"></i>
+        <i class="fa-brands fa-css3-alt"></i>
+        <i class="fa-brands fa-js"></i>
+        <i class="fa-brands fa-php"></i>
+        <i class="fa-brands fa-node"></i>
+      </div>
+    </section>
+    <section id="kontak" class="p-4 bg-slate-50 h-screen lg:px-[14rem]">
+      <h2 class="text-lg font-bold text-center">Kontak saya</h2>
+      <form action="" class="mx-10 my-3 flex justify-center flex-col gap-3 lg:justify-end mt-[5rem] lg:mt-[7rem]">
+        <label class="text-sm -mb-2 font-semibold">Nama</label>
+        <input type="text" class="w-full outline-0 py-2 font-bold bg-inherit text-xs px-0 border-b-4 border-slate-500">
+        <label class="text-sm -mb-2 font-semibold">Email</label>
+        <input type="text" class="w-full outline-0 py-2 font-bold bg-inherit text-xs px-0 border-b-4 border-slate-500">
+        <label class="text-sm -mb-2 font-semibold">Pesan</label>
+        <textarea
+          class="w-full outline-0 py-2 font-bold bg-inherit text-xs px-0 border-b-4 border-slate-500"></textarea>
+        <button class="p-3 rounded-lg bg-slate-500 text-sm text-slate-50 font-bold"><i
+            class="fa-regular fa-paper-plane"></i> Kirim</button></button>
+      </form>
+    </section>
+    <section id="galery" class="p-4 bg-gray-300 min-h-screen lg:p-5">
+      <h2 class="text-lg font-bold text-center lg:mt-[4rem]">Galeri saya</h2>
+      <div class="w-ful gap-5 space-y-5 mt-12 mx-auto columns-2 lg:w-2/3">
+        <img src="img/galeri/img (2).png" class="rounded-lg w-fit" alt="">
+        <img src="img/galeri/img (1).png" class="w-fit rounded-lg" alt="">
+        <img src="img/galeri/img (4).png" class="rounded-lg" alt="">
+        <img src="img/galeri/img (3).png" class="rounded-lg" alt="">
+        <img src="img/galeri/img (7).png" class="rounded-lg" alt="">
+        <img src="img/galeri/img (5).png" class="rounded-lg" alt="">
+        <img src="img/galeri/img (6).png" class="rounded-lg" alt="">
+      </div>
+    </section>
+  </main>
+  <footer class="my-5 mx-auto">
+    <p class="text-slate-400 text-sm ">copyright 2023 <i class="fa-solid fa-heart text-pink-500"></i> Alif rahman</p>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
